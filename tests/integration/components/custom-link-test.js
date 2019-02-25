@@ -25,7 +25,7 @@ module('Integration | Component | custom-link', function(hooks) {
                 hasTarget: true,
                 href: "https://www.theCompany.com",
                 isFollowedBy: ",",
-                text: "My Company Name"
+                text: "My Company"
               }
             },
             raw`an emerging technology holding company, today announced the creation of a new division.`
