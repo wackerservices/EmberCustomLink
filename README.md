@@ -5,8 +5,7 @@ Purpose
 ------------------------------------------------------------------------------
 
 `ember-custom-link` is an Ember addon which allows you to pass attributes to the `ember-custom-link` component that 
-determine whether the component is an internal link, using `{{#link-to}}`, or an external link using 
-`href="SOME VALUE"`.
+determine whether the component is an internal link, using `{{#link-to}}`, or an external link using `href`.
 
 Usage
 ------------------------------------------------------------------------------
@@ -26,7 +25,7 @@ export default helper(isHyperlinkComponent);
 
 ```
 
-And then combined with the helper in a parent component such as this:
+Which is then combined with the helper in a parent component such as this:
 
 `app\templates\components\open-pr-body.hbs`
 
