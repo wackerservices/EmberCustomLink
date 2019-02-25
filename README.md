@@ -1,7 +1,68 @@
 ember-custom-link
 ==============================================================================
 
-This is an Ember addon which...
+`ember-custom-link` is an Ember addon which allows you to pass the following attributes as data:
+
+- hasTarget
+- href
+- linkTo
+- isFollowedBy
+- text
+
+An few data examples:
+
+#### Internal link using the `{{#link-to}}` component with the hypertext followed by whitespace
+
+```js
+{
+    "custom-link": {
+        hasTarget: true,
+        linkTo: "index",
+        isFollowedBy: false,
+        text: "THIS IS MY SITE NAME"
+    }
+}
+```
+
+#### External link followed by whitespace
+
+```js
+{
+    "custom-link": {
+        hasTarget: true,
+        href: "https://www.<SITENAME>.com",
+        isFollowedBy: false,
+        text: "THIS IS MY SITE NAME"
+    }
+}
+```
+
+#### External link followed by a comman and then whitespace
+
+```js
+{
+    "custom-link": {
+        hasTarget: true,
+        href: "https://www.<SITENAME>.com",
+        isFollowedBy: ",",
+        text: "THIS IS MY SITE NAME"
+    }
+}
+```
+
+#### Example of using `mailto:` requiring `hasTarget: false`
+
+```js
+{
+    "custom-link": {
+        hasTarget: false,
+        href: "mailto:myName@mySite.com",
+        isFollowedBy: false,
+        text: "myName@mySite.com"
+    }
+}
+```
+
 
 Installation
 ------------------------------------------------------------------------------
