@@ -1,13 +1,13 @@
 ember-custom-link
 ==============================================================================
 
-Purpose:
+Purpose
 ------------------------------------------------------------------------------
 
 `ember-custom-link` is an Ember addon which allows you to pass attributes to the component that determine whether
 the component is an internal link, using `{{#link-to}}`, or an external link using `href="SOME VALUE"`.
 
-Usage:
+Usage
 ------------------------------------------------------------------------------
 
 It may be combined with a custom Ember helper that you would make such as this:
@@ -45,7 +45,7 @@ And then combined with the helper in a parent component such as this:
 
 Or it can be used on it's own with its required attributes being passed as properties.
 
-## Possible attributes:
+## Possible attributes
 
 - `hasTarget` -> Should be `true` unless using `"mailto"` where there is no desire to open a linked document.
 - `href` -> To be included if your link is external and is a String representing the `href` attribute you want in your template. 
@@ -53,7 +53,7 @@ Or it can be used on it's own with its required attributes being passed as prope
 - `isFollowedBy` -> Should be `false` unless you want a character such as `,` or `.` to immediately follow your custom link.
 - `text` -> A String representing the actual hypertext you want to appear on the page.
 
-## A few data examples:
+## A few data examples
 
 #### Internal link using the `{{#link-to}}` component with the hypertext followed by whitespace
 
