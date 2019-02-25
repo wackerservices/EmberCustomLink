@@ -1,6 +1,11 @@
 ember-custom-link
 ==============================================================================
 
+Usage
+------------------------------------------------------------------------------
+
+[Longer description of how to use the addon in apps.]
+
 `ember-custom-link` is an Ember addon which allows you to pass attributes to the component that determine whether
 the component is an internal link, using `{{#link-to}}`, or an external link using `href="SOME VALUE"`.
 
@@ -106,12 +111,6 @@ Installation
 ```
 ember install ember-custom-link
 ```
-
-
-Usage
-------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
 
 
 Contributing
