@@ -3,13 +3,13 @@ ember-custom-link
 
 `ember-custom-link` is an Ember addon which allows you to pass the following attributes as data:
 
-- hasTarget
-- href
-- linkTo
-- isFollowedBy
-- text
+- `hasTarget` -> Should be `true` unless using `"mailto"` where there is no desire to open a linked document.
+- `href` -> To be included if your link is external and is a String representing the `href` attribute you want in your template. 
+- `linkTo` -> To be included if your link is internal and is a String representing the `link-to` route you want in your template.
+- `isFollowedBy` -> Should be `false` unless you want a character such as `,` or `.` to immediately follow your custom link.
+- `text` -> A String representing the actual hypertext you want to appear on the page.
 
-An few data examples:
+## A few data examples:
 
 #### Internal link using the `{{#link-to}}` component with the hypertext followed by whitespace
 
