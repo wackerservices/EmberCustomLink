@@ -4,8 +4,9 @@ ember-custom-link
 Purpose
 ------------------------------------------------------------------------------
 
-`ember-custom-link` is an Ember addon which allows you to pass attributes to the component that determine whether
-the component is an internal link, using `{{#link-to}}`, or an external link using `href="SOME VALUE"`.
+`ember-custom-link` is an Ember addon which allows you to pass attributes to the `ember-custom-link` component that 
+determine whether the component is an internal link, using `{{#link-to}}`, or an external link using 
+`href="SOME VALUE"`.
 
 Usage
 ------------------------------------------------------------------------------
