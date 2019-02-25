@@ -1,7 +1,43 @@
 ember-custom-link
 ==============================================================================
 
-`ember-custom-link` is an Ember addon which allows you to pass the following attributes as data:
+`ember-custom-link` is an Ember addon which allows you to pass attributes to the component which determine whether
+the component is an internal link, using `{{#link-to}}` or an external link using `href="SOME VALUE"`.
+
+We use it together with a custom Ember helper that is simplified here:
+
+`app\helpers\is-hyperlink-component.js`
+
+```js
+import { helper } from '@ember/component/helper';
+
+export function isHyperlinkComponent([key]) {
+  if (key === "custom-link") return "ember-custom-link";
+}
+
+export default helper(isHyperlinkComponent);
+
+```
+
+in a parent component such as this:
+
+`app\templates\components\open-pr-body.hbs`
+
+```hbs
+  {{#each data.copyPreview as |paragraph|}}
+    <p>
+      {{#each paragraph as |paragraph|}}
+        {{#each-in paragraph as |key value|}}
+          {{#if (is-hyperlink-component key value)}} {{!-- THE NEXT THREE LINES ARE THE SIGNIFICANT PORTION --}}
+            {{component key data=value}}
+          {{/if}}
+        {{/each-in}}
+      {{/each}}
+    </p>
+  {{/each}}
+```
+
+## Possible attributes:
 
 - `hasTarget` -> Should be `true` unless using `"mailto"` where there is no desire to open a linked document.
 - `href` -> To be included if your link is external and is a String representing the `href` attribute you want in your template. 
