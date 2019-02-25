@@ -1,13 +1,14 @@
 ember-custom-link
 ==============================================================================
 
-Usage
+Purpose:
 ------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
 
 `ember-custom-link` is an Ember addon which allows you to pass attributes to the component that determine whether
 the component is an internal link, using `{{#link-to}}`, or an external link using `href="SOME VALUE"`.
+
+Usage:
+------------------------------------------------------------------------------
 
 It may be combined with a custom Ember helper that you would make such as this:
 
@@ -41,6 +42,8 @@ And then combined with the helper in a parent component such as this:
     </p>
   {{/each}}
 ```
+
+Or it can be used on it's own with its required attributes being passed as properties.
 
 ## Possible attributes:
 
