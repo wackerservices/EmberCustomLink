@@ -47,7 +47,8 @@ Or it can be used on it's own with its required attributes being passed as prope
 
 ## Possible attributes
 
-- `hasTarget` -> Should be `true` unless using `"mailto"` where there is no desire to open a linked document.
+- `class` -> Is assumed to be `false` unless specifically assigned a CSS class or classes, such as: `class: "italicized-text"`.
+- `hasTarget` -> Should be `true` unless there is no desire to open a linked document, such as `"mailto"`.
 - `href` -> To be included if your link is external and is a String representing the `href` attribute you want in your template. 
 - `linkTo` -> To be included if your link is internal and is a String representing the `link-to` route you want in your template.
 - `isFollowedBy` -> Should be `false` unless you want a character such as `,` or `.` to immediately follow your custom link.
@@ -55,11 +56,12 @@ Or it can be used on it's own with its required attributes being passed as prope
 
 ## A few data examples
 
-#### Internal link using the `{{#link-to}}` component with the hypertext followed by whitespace
+#### Internal link using the `{{#link-to}}` component with hypertext followed by whitespace and styled using a CSS class `"italicized-text"`
 
 ```js
 {
     "custom-link": {
+        class: "italicized-text",
         hasTarget: true,
         linkTo: "index",
         isFollowedBy: false,
