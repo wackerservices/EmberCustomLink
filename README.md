@@ -8,6 +8,15 @@ Purpose
 determine whether the component is an internal link, using `{{#link-to}}`, or an external link using `href`.
 
 Usage
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
+Installation
 ------------------------------------------------------------------------------
 
 It may be combined with a custom Ember helper that you would make such as this:
@@ -142,8 +151,8 @@ Contributing
 
 * `ember serve`
 * Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
 ------------------------------------------------------------------------------
