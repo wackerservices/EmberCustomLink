@@ -8,8 +8,7 @@
 {{else}}
   {{#if this.data.isFollowedBy}}
     {{#if this.data.hasTarget}}
-      <a href={{this.data.href}} class={{this.data.class}} target="_blank"
-        rel="noopener">{{this.data.text}}</a>{{this.data.isFollowedBy}}
+      <a href={{this.data.href}} class={{this.data.class}} target="_blank" rel="noopener">{{this.data.text}}</a>{{this.data.isFollowedBy}}
     {{else}}
       <a href={{this.data.href}} class={{this.data.class}}>{{this.data.text}}</a>{{this.data.isFollowedBy}}
     {{/if}}
