@@ -1,8 +1,8 @@
 {{#if this.data.linkTo}}
   {{#if this.data.isFollowedBy}}
-    {{#link-to this.data.linkTo class=this.data.class}}{{this.data.text}}{{/link-to}}{{this.data.isFollowedBy}}
+    <LinkTo @route={{this.data.linkTo}} class={{this.data.class}}>{{this.data.text}}</LinkTo>{{this.data.isFollowedBy}}
   {{else}}
-    {{#link-to this.data.linkTo class=this.data.class}}{{this.data.text}}{{/link-to}}
+    <LinkTo @route={{this.data.linkTo}} class={{this.data.class}}>{{this.data.text}}</LinkTo>
   {{/if}}
 
 {{else}}
